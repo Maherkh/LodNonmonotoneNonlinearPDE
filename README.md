@@ -1,5 +1,4 @@
 #Lod_Code_nonmonotone_nonlinearPDE
-#Lod_Code_nonmonotone_nonlinearPDE
 This repository contains the LOD code for the experiments in the paper "Linearized Localized Orthogonal Decomposition for Quasilinear Nonmonotonic Elliptic PDE." The implementation is divided
 into two parts. One part performs the experiments for the Kacanov-type linearization, the other for the linearization of the Fr'echet derivative. The correction calculations were implemented using 
 parallelization code.

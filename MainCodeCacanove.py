@@ -189,7 +189,7 @@ uFullref=solveFEM(u0,FNodes1, FElements1, FBoundary1,Nh,right_hand_side,Anonlin,
 def conver_history(kq):
     H1=[]
     L2=[]
-     
+      # p represent different sizes of coarse meshes
     for p in [2,4,8,16,32]:
         NH = p
         if p==2:
@@ -227,7 +227,7 @@ def global_exper(J):
 # The needed data for computation of global corrector matrix
     H_Errors=[]
     L2_Errors=[]
-    # Submit tasks for each coarse element in parallel
+    # Submit the locaization parameters 
     futures = [conver_history.remote(kg) for kg in [J]]
         # Collect results from each future and accumulate into the global matrix Qh
     results =ray.get(futures)

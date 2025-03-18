@@ -228,7 +228,7 @@ def global_exper(J):
 # The needed data for computation of global corrector matrix
     H_Errors=[]
     L2=[]
-    # Submit tasks for each coarse element in parallel
+    # Submit the locaization parameters 
     futures = [conver_history.remote(kg) for kg in [J]]
         # Collect results from each future and accumulate into the global matrix Qh
     results=ray.get(futures)

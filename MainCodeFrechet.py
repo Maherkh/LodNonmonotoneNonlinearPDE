@@ -192,7 +192,7 @@ uFullref=solve_Fem(Nh,u0,FNodes1,FElements1,FBoundary1,right_hand_side,Anonlin, 
 def conver_history(kq):
     H1=[]
     L2=[]
-   
+    # p represent different sizes of coarse meshes
     for p in [2,4,8,16,32]: #different sizes of coarse mesh.
         NH = p
         if p==2:

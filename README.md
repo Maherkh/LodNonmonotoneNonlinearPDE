@@ -7,4 +7,4 @@ The fine mesh size Nh can be adjusted. The "p" in the for loop of the conver_his
 To test different sizes of localization parameters, the "i" in global_exper(i) can be adjusted.
 
 
-In the context of the combined example, the examples can be constructed by combining them as described in the paper. To define the spatial coefficient c1, the values of both parameter \Beta=10 \alpha1=5 that make c1 of smaller contrast. 
+In the context of combined examples, the examples can be constructed by combining Van Genuchten models or the Van Genuchten model with an exponential model, as described in the paper. To define the spatial coefficient c1, the values of both parameter \Beta=10 \alpha1=5 that make c1 of smaller contrast. 
